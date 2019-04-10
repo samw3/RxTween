@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxTween_Example' do
+  pod 'RxTween', :path => '../'
+
+  target 'RxTween_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
