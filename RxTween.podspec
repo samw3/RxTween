@@ -6,10 +6,10 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'RxTween'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of RxTween.'
+Pod::Spec.new do |spec|
+  spec.name             = 'RxTween'
+  spec.version          = '0.1.0'
+  spec.summary          = 'Tweening operators for RxSwift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,26 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  spec.description      = <<-DESC
+Adds tweening operators to RxSwift for use in animations.
                        DESC
 
-  s.homepage         = 'https://github.com/samw3/RxTween'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'samw3' => 'sam@samwashburn' }
-  s.source           = { :git => 'https://github.com/samw3/RxTween.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  spec.homepage         = 'https://github.com/samw3/RxTween'
+  # spec.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+  spec.author           = { 'samw3' => 'sam@samwashburn' }
+  spec.source           = { :git => 'https://github.com/samw3/RxTween.git', :tag => spec.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '8.0'
+  spec.dependency 'RxSwift'
 
-  s.source_files = 'RxTween/Classes/**/*'
+  spec.source_files = 'RxTween/Classes/**/*'
   
-  # s.resource_bundles = {
+  # spec.resource_bundles = {
   #   'RxTween' => ['RxTween/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # spec.public_header_files = 'Pod/Classes/**/*.h'
+  # spec.frameworks = 'UIKit', 'MapKit'
+  # spec.dependency 'AFNetworking', '~> 2.3'
 end

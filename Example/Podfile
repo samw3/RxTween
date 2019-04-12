@@ -1,11 +1,14 @@
+platform :ios, '8.0'
 use_frameworks!
 
 target 'RxTween_Example' do
   pod 'RxTween', :path => '../'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDisplayLink'
 
   target 'RxTween_Tests' do
     inherit! :search_paths
-
     
   end
 end
